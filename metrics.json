@@ -1,4 +1,32 @@
-      "hr",
+{
+  "project": "Bike-Sharing Demand Forecasting & Capacity Planning",
+  "dataset": "UCI Bike Sharing Dataset - hour.csv",
+  "target": "cnt",
+  "split": {
+    "method": "chronological",
+    "train_fraction": 0.8,
+    "test_fraction": 0.2,
+    "train_rows": 13903,
+    "test_rows": 3476
+  },
+  "baseline": {
+    "model": "DummyRegressor(strategy='mean')",
+    "prediction": 174.64,
+    "MAE": 174.98,
+    "RMSE": 232.61,
+    "WAPE_percent": 70.34
+  },
+  "random_forest": {
+    "model": "RandomForestRegressor",
+    "parameters_reported": {
+      "n_estimators": 200,
+      "max_depth": null,
+      "min_samples_split": 2,
+      "min_samples_leaf": 1,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "hr",
       "atemp",
       "temp"
     ]
