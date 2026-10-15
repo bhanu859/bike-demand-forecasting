@@ -1,0 +1,50 @@
+      "hr",
+      "atemp",
+      "temp"
+    ]
+  },
+  "segment_evaluation": {
+    "peak_hour": {
+      "hour": 17,
+      "MAE": 146
+    },
+    "working_day": {
+      "MAE": 43.53
+    },
+    "non_working_day": {
+      "MAE": 48.49
+    },
+    "weather": {
+      "1": {
+        "observations": 2162,
+        "actual_avg": 267.17,
+        "predicted_avg": 247.08,
+        "MAE": 42.46,
+        "RMSE": 65.37,
+        "WAPE_percent": 15.89
+      },
+      "2": {
+        "observations": 1076,
+        "actual_avg": 229.37,
+        "predicted_avg": 214.45,
+        "MAE": 44.48,
+        "RMSE": 69.31,
+        "WAPE_percent": 19.39
+      },
+      "3": {
+        "observations": 238,
+        "actual_avg": 169.15,
+        "predicted_avg": 178.09,
+        "MAE": 72.38,
+        "RMSE": 103.78,
+        "WAPE_percent": 42.79
+      }
+    }
+  },
+  "notes": [
+    "Metrics are copied from the user's reported experiment; not independently rerun.",
+    "Weather category 4 was not present in the reported weather-segment results.",
+    "Verify chronological row alignment between X_test, y_test, predictions, and test-results table before publication.",
+    "actual_vs_predicted.png should be generated from the full held-out test predictions, not only the largest-error sample."
+  ]
+}
